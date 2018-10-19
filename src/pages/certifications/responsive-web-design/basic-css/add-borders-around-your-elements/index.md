@@ -3,8 +3,28 @@ title: Add Borders Around Your Elements
 ---
 ## Add Borders Around Your Elements
 
-This is a stub. <a href='https://github.com/freecodecamp/guides/tree/master/src/pages/certifications/responsive-web-design/basic-css/add-borders-around-your-elements/index.md' target='_blank' rel='nofollow'>Help our community expand it</a>.
+To add borders to the element, you must first create the class somewhere within the `<style>` tags:
 
-<a href='https://github.com/freecodecamp/guides/blob/master/README.md' target='_blank' rel='nofollow'>This quick style guide will help ensure your pull request gets accepted</a>.
+```html
+.thick-green-border {
+  border-width: 10px;
+  border-color: green;
+  border-style: solid;
+}
+```
+Or:
+
+```html
+ .thick-green-border {
+    border: solid 10px green;
+  }
+```
+
+Then, add the class attribute to the cat photo (Remember to leave a space):
+
+```html
+<img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" 
+     alt="A cute orange cat lying on its back.">
+```
 
 <!-- The article goes here, in GitHub-flavored Markdown. Feel free to add YouTube videos, images, and CodePen/JSBin embeds  -->
